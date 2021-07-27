@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/enemyDestroyedSFXOGG.ogg-1dd54f120994308f94728ee6b2cb1231.oggstr"
+
+[deps]
+
+source_file="res://audio/enemyDestroyedSFXOGG.ogg"
+dest_files=[ "res://.import/enemyDestroyedSFXOGG.ogg-1dd54f120994308f94728ee6b2cb1231.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

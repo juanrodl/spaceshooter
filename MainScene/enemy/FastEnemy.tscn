@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MainScene/enemy/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MainScene/enemy/FastEnemy.gd" type="Script" id=2]
+
+[node name="FastEnemy" instance=ExtResource( 1 )]
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = false
+
+[node name="VisibilityNotifier2D" parent="." index="2"]
+visible = false

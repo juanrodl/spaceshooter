@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MainScene/enemy/EnemyExplosion.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.956863, 0.552941, 0.196078, 1, 0.976471, 0.603922, 0.203922, 0 )
+
+[node name="EnemyExplosion" type="CPUParticles2D"]
+position = Vector2( 1.88773, 0.943871 )
+scale = Vector2( 2, 2 )
+emitting = false
+amount = 50
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+direction = Vector2( 0, 0 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 100.0
+initial_velocity_random = 0.8
+color_ramp = SubResource( 1 )
+script = ExtResource( 1 )

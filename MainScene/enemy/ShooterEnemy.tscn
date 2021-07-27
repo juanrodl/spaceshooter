@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MainScene/textures/enemyShip.png" type="Texture" id=1]
+[ext_resource path="res://MainScene/enemy/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MainScene/enemy/ShooterEnemy.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 48.3279, 24.481 )
+
+[node name="ShooterEnemy" instance=ExtResource( 2 )]
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 3 )
+verticalSpeed = 2.0
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( 0.163437, 0.49543 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 1.54972e-05, 0.250816 )
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" parent="." index="2"]
+position = Vector2( 0.56189, -1.62125e-05 )
+scale = Vector2( 4.61467, 2.4983 )
+
+[node name="LeftGun" parent="FiringPositions" index="0"]
+position = Vector2( -20.4769, 26.9695 )
+
+[node name="RightGun" parent="FiringPositions" index="1"]
+position = Vector2( 21.4757, 26.4701 )
+
+[node name="FireTimer" type="Timer" parent="." index="4"]
+one_shot = true
